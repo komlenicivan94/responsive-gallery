@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+#wrapper {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 960px;
+}
+header {
+    text-align: center;
+}
+#container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.box {
+    background-color: #6ba2d9;
+    text-align: center;
+    margin-bottom: 1em;
+    flex-basis: 18%;
+    border-radius: 1em;
+}
+.box > img {
+    width: 100%;
+}
+.box > p {
+    background-color: #e4e5e6;
+    margin: 0;
+    padding: 0.7em;
+    border-radius: 0 0 1em 1em;
+}
+@media screen and (max-width: 768px) {
+    .box {
+    flex-basis: 30%;}
+    }
+@media screen and (max-width: 414px) {
+    .box {
+    flex-basis: 70%;
+    margin: 0 auto 1em;}
+    }
